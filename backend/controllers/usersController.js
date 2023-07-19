@@ -71,7 +71,7 @@ const loginUser = asyncHandler( async (req, res) =>{
 
 
 const getUserData = asyncHandler( async (req, res) =>{
-    res.json({message: 'get user data'})
+    res.json(req.user)
 })
 
 const generateToken = (id) =>{
